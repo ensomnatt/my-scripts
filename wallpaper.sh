@@ -1,7 +1,5 @@
 #!/bin/bash
 
-swww img $@ --transition-type wipe --transition-duration 1 >/dev/null 2>&1
-PID=$!
-kill -SIGINT "$PID"
-wal -i $@ -n --cols16
-wal-telegram --wal
+wal -i $1 -n -s --cols16
+matugen image $1
+wal-telegram --wal -t black -g

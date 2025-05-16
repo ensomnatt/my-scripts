@@ -10,12 +10,18 @@ FILES=(
   ~/.config/Kvantum
   ~/.config/nwg-look
   ~/.config/rofi
-  ~/.config/wal
   ~/.config/waybar
   ~/.config/wezterm
   ~/.config/wlogout
   ~/.config/webfetch
   ~/.config/yazi
+  ~/.config/matugen
+  ~/.zshrc
+  ~/.zshenv
+  ~/.zprofile
+  ~/.tmux.conf
+  ~/.tmux
+  ~/pictures/wallpapers
 )
 
 message=""
@@ -45,7 +51,7 @@ cd $DOTFILES_DIR
 
 echo "updating hyprland dotfiles"
 
-push $1
+push $message
 
 if [ "$neovim" = true ]; then
   cd $NEOVIM_DIR
