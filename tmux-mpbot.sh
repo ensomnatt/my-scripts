@@ -1,5 +1,4 @@
-
-#!/bin/bash
+#!/usr/bin/env bash
 
 SESSION=mpbot
 WORK_DIR=~/projects/mpbot
